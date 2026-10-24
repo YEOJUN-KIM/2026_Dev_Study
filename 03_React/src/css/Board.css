@@ -1,0 +1,275 @@
+/* =========================
+   Board 전체
+========================= */
+
+.board-container {
+    width: 100%;
+}
+
+.board-box {
+    max-width: 1000px;
+}
+
+
+/* =========================
+   상단
+========================= */
+
+.board-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+.board-header .ui-title {
+    margin: 0;
+}
+
+.board-header a {
+    text-decoration: none;
+}
+
+.board-write-button {
+    height: 38px;
+}
+
+
+/* =========================
+   검색
+========================= */
+
+.board-search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+
+    margin-bottom: 18px;
+}
+
+.board-search input {
+    width: 260px;
+    height: 38px;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+
+    background-color: var(--color-field);
+    color: var(--color-text);
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+    outline: none;
+}
+
+.board-search input::placeholder {
+    color: var(--color-muted);
+}
+
+.board-search input:focus {
+    border-color: var(--color-accent);
+}
+
+
+/* 검색 초기화 */
+
+.board-reset-button {
+    height: 38px;
+
+    padding: 0 14px;
+
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+
+    background-color: transparent;
+    color: var(--color-muted);
+
+    cursor: pointer;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+.board-reset-button:hover {
+    background-color: #242424;
+    color: var(--color-text);
+}
+
+
+/* =========================
+   테이블
+========================= */
+
+.board-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+}
+
+.board-table {
+    width: 100%;
+
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    background-color: var(--color-field);
+
+    color: #dddddd;
+
+    font-size: 14px;
+}
+
+.board-table thead {
+    background-color: #242424;
+}
+
+.board-table th,
+.board-table td {
+    padding: 15px 12px;
+
+    border-bottom: 1px solid var(--color-border);
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* 컬럼 너비 */
+
+.board-table th:nth-child(1) {
+    width: 90px;
+}
+
+.board-table th:nth-child(2) {
+    width: auto;
+}
+
+.board-table th:nth-child(3) {
+    width: 140px;
+}
+
+.board-table th:nth-child(4) {
+    width: 90px;
+}
+
+.board-table th:nth-child(5) {
+    width: 160px;
+}
+
+.board-table th {
+    color: var(--color-label);
+    font-weight: 600;
+}
+
+.board-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.board-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.board-table tbody tr:hover {
+    background-color: #222222;
+}
+
+
+/* =========================
+   제목
+========================= */
+
+.board-title {
+    overflow: hidden;
+
+    color: var(--color-text);
+
+    text-align: left !important;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+.board-title:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+
+/* =========================
+   게시글 없음
+========================= */
+
+.board-empty {
+    height: 160px;
+
+    color: var(--color-muted);
+
+    text-align: center !important;
+}
+
+
+/* =========================
+   하단
+========================= */
+
+.board-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 24px;
+}
+
+.board-footer .ant-pagination {
+    margin: 0;
+}
+
+.board-info {
+    width: 100%;
+
+    margin-top: 14px;
+
+    color: var(--color-muted);
+
+    font-size: 13px;
+
+    text-align: right;
+}
+
+
+/* =========================
+   모바일
+========================= */
+
+@media (max-width: 700px) {
+
+    .board-table {
+        min-width: 700px;
+    }
+
+    .board-search {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .board-search input {
+        width: 100%;
+    }
+
+    .board-search .ui-button,
+    .board-reset-button {
+        flex: 1;
+    }
+
+}

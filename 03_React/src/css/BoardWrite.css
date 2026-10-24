@@ -1,0 +1,24 @@
+.write-box { max-width: 580px; }
+.input-group { margin-bottom: 20px; }
+.input-group textarea { min-height: 150px; }
+.write-button { width: 100%; margin-top: 5px; }
+
+.back-button {
+    display: block;
+    margin-top: 12px;
+    padding: 12px 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-control);
+    background-color: var(--color-field);
+    color: var(--color-label);
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.back-button:hover {
+    background-color: var(--color-surface);
+    border-color: var(--color-border-hover);
+    color: var(--color-heading);
+}
