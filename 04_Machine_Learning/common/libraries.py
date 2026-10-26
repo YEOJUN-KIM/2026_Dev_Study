@@ -147,3 +147,24 @@ from sklearn.metrics import (
     recall_score,
     f1_score,
 )
+
+# =========================================================
+# 군집 분석 및 차원 축소
+# =========================================================
+
+# KMeans
+# - 중심점과의 거리를 기준으로 데이터를 지정된 개수의 군집으로 분류
+#
+# DBSCAN
+# - 데이터의 밀도를 기준으로 군집을 생성
+# - 밀도가 낮은 데이터는 -1(노이즈)로 처리
+from sklearn.cluster import KMeans, DBSCAN
+
+# PCA
+# - 여러 특성의 정보를 유지하면서 차원을 축소
+# - 군집 결과를 2차원으로 시각화할 때 주로 사용
+from sklearn.decomposition import PCA
+
+# load_iris
+# - scikit-learn에서 제공하는 Iris 예제 데이터 불러오기
+from sklearn.datasets import load_iris
