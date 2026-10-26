@@ -2,11 +2,10 @@
 
 [← 루트로 이동](../README.md)
 
-날짜별 복습본보다는 **한 번에 다시 보기 좋은 대표 노트** 중심으로 정리했습니다. 중복 내용은 제거하고, 짧게 나뉘어 있던 회귀 노트는 합쳤습니다.
+머신러닝 학습 순서를 파일 번호로 바로 확인할 수 있도록 노트북을 한 폴더에 정리했습니다.  
+이미 배운 데이터 준비 과정은 한 셀로 묶고, 새로 배우는 개념과 모델은 단계별로 나누어 기록합니다.
 
-## 실행 환경 설정
-
-머신러닝 실습은 라이브러리 충돌을 줄이기 위해 `04_Machine_Learning` 폴더 안에 `.venv` 가상환경을 만들어 사용하는 것을 권장합니다.
+## 실행 환경
 
 ```bash
 cd 04_Machine_Learning
@@ -19,57 +18,36 @@ Windows PowerShell:
 .\.venv\Scripts\Activate.ps1
 ```
 
-Windows CMD:
-
-```cmd
-.venv\Scripts\activate
-```
-
-가상환경 활성화 후 필요한 라이브러리를 한 번에 설치합니다.
+필요한 패키지 설치:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-VS Code에서 `.ipynb` 파일을 열었다면 우측 상단 **Select Kernel**에서 `.venv` 환경을 선택합니다.
-
-> `.venv`는 PC별 실행 환경이므로 GitHub에는 올리지 않습니다.
-
-## 공통 라이브러리
-
-노트북마다 같은 `import` 구문을 반복하지 않도록 [`common/libraries.py`](./common/libraries.py)에 머신러닝 학습에서 사용하는 라이브러리를 모아두었습니다.
-
-각 학습 노트북에서는 첫 부분에서 다음과 같이 불러옵니다.
-
-```python
-%run ../common/libraries.py
-```
-
-그리고 해당 노트북에서 실제 사용하는 라이브러리의 역할만 간단한 주석으로 표시합니다. 공통 파일에는 **import와 matplotlib 기본 설정만** 두고, 전처리·훈련·평가 코드는 각 노트북에 그대로 남겨 학습 흐름을 확인할 수 있도록 했습니다.
+VS Code에서는 `.ipynb`의 Kernel을 `.venv` Python으로 선택합니다.
 
 ## 학습 순서
 
-| 순서 | 주제 | 대표 노트 |
+| 순서 | 내용 | 이동 |
 | ---: | --- | --- |
-| 01 | Data Preparation | [01_Data_Preparation README](./01_Data_Preparation/README.md) |
-| 02 | Regression | [02_Regression README](./02_Regression/README.md) |
-| 03 | Regression Project | [03_Regression_Project README](./03_Regression_Project/README.md) |
-| 04 | Classification | [04_Classification README](./04_Classification/README.md) |
-| 05 | Ensemble Project | [05_Ensemble_Project README](./05_Ensemble_Project/README.md) |
+| 01 | 결측치·이상치·중복값 등 데이터 전처리 | [01_data_preprocessing.ipynb](./01_data_preprocessing.ipynb) |
+| 02 | 분포·상관관계·인코딩·스케일링 등 특성 엔지니어링 | [02_feature_engineering.ipynb](./02_feature_engineering.ipynb) |
+| 03 | KNN 회귀와 이웃 수에 따른 변화 | [03_knn_regression.ipynb](./03_knn_regression.ipynb) |
+| 04 | 선형·다중·다항 회귀와 특성 확장 | [04_linear_multiple_polynomial_regression.ipynb](./04_linear_multiple_polynomial_regression.ipynb) |
+| 05 | 여러 회귀 모델 비교와 GridSearchCV 튜닝 | [05_regression_model_comparison_and_tuning.ipynb](./05_regression_model_comparison_and_tuning.ipynb) |
+| 06 | KNN·로지스틱 회귀·결정트리 분류와 평가 | [06_classification_basics.ipynb](./06_classification_basics.ipynb) |
+| 07 | 앙상블 모델 비교·튜닝·분류 성능평가 | [07_ensemble_and_model_evaluation.ipynb](./07_ensemble_and_model_evaluation.ipynb) |
 
-## 중복 정리 내용
+## 보조 폴더
 
-- `3day_Feature_Enginnering`은 후속 `4day` 노트와 대부분 겹쳐 후속본만 유지했습니다.
-- 짧은 `wines.ipynb`, `asd` 형태의 복습/초안 중 대표 노트와 겹치는 것은 제외했습니다.
-- 선형회귀와 다중회귀는 한 노트북으로 합쳤습니다.
-- 주택가격 관련 여러 버전은 가장 완성도가 높은 전체 모델·튜닝 노트 하나로 정리했습니다.
-- 앙상블의 짧은 실습본은 전체 실습본과 겹쳐 제거하고, 최종 와인 분류 과제는 종합 학습 노트로 유지했습니다.
-- Python/Pandas 기초 복습은 `01_Python`, `03_Data_Pipeline`과 중복되어 ML 폴더에서는 제외했습니다.
+- [common](./common/) — 공통 import 및 시각화 설정
+- [data](./data/) — 학습 데이터
+- [models](./models/) — 저장한 모델
+- [reference](./reference/) — 참고 자료
 
-## 공용 파일
+## 정리 기준
 
-- [data](./data/README.md) : 머신러닝 학습 데이터셋
-- [models](./models/README.md) : 저장한 모델 파일
-- [requirements.txt](./requirements.txt) : 머신러닝 패키지
-
-이전: [← Data Pipeline](../03_Data_Pipeline/README.md) · 다음: [React →](../05_React/README.md)
+- 새로 배우는 개념은 셀을 나누어 설명과 결과를 확인합니다.
+- 이미 반복해서 사용한 `read_csv → X/y → train_test_split → scaler` 같은 준비 과정은 한 셀에 묶습니다.
+- 테스트 데이터는 가능한 한 최종 일반화 성능 확인용으로 사용하고, 모델 비교는 검증 데이터 중심으로 진행합니다.
+- 모델별로 지원하는 하이퍼파라미터가 다르므로 공통 반복문에서 무리하게 같은 속성을 넣지 않습니다.
