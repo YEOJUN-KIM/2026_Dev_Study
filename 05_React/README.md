@@ -5,7 +5,7 @@
 
 React 기반 웹 화면을 만들면서 **라우팅, 상태관리, API 연동, 인증 상태, CRUD UI**를 실습한 내용을 정리했습니다.
 
-기존 프로젝트에서 학습 과정 중 남아 있던 중복 게시판(`Board` / `Board1`), Vite·React 기본 로고, 메모 파일, 오타가 포함된 파일명 등을 정리하고 대표 구현만 남겼습니다.
+기존 종합 학습에서 학습 과정 중 남아 있던 중복 게시판(`Board` / `Board1`), Vite·React 기본 로고, 메모 파일, 오타가 포함된 파일명 등을 정리하고 대표 구현만 남겼습니다.
 
 ## 학습 내용
 
@@ -35,3 +35,9 @@ src/
 ```
 
 > 이 폴더는 완성 서비스 배포용 저장소가 아니라, React에서 여러 기능을 구현하고 백엔드 API와 연결하는 방법을 학습한 기록입니다.
+## 파일/폴더 바로가기
+
+- [src README](./src/README.md)
+- [package.json](./package.json)
+- [vite.config.js](./vite.config.js)
+- [index.html](./index.html)

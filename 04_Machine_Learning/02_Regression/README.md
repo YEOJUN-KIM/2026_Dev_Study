@@ -1,7 +1,9 @@
-# 02 Regression
+# 02_Regression
 
-[← Machine Learning](../README.md)
+[← Machine Learning README](../README.md)
 
-1. [KNN 회귀 기초](./01_knn_regression_basics.ipynb)
-2. [선형·다중 회귀](./02_linear_multiple_regression.ipynb)
-3. [다항 특성 확장](./03_polynomial_features.ipynb)
+## 학습 파일 바로가기
+
+- [01_knn_regression_basics](./01_knn_regression_basics.ipynb)
+- [02_linear_multiple_regression](./02_linear_multiple_regression.ipynb)
+- [03_polynomial_features](./03_polynomial_features.ipynb)

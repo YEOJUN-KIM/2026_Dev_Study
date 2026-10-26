@@ -1,3 +1,8 @@
-# Saved Models
+# models
 
-학습 과정에서 저장한 모델 파일입니다.
+[← Machine Learning README](../README.md)
+
+## 파일 바로가기
+
+- [hgb_model.pickle](./hgb_model.pickle)
+- [hgb_model.pkl](./hgb_model.pkl)

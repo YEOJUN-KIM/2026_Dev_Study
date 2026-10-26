@@ -1,5 +1,7 @@
-# 04 Classification
+# 04_Classification
 
-[← Machine Learning](../README.md)
+[← Machine Learning README](../README.md)
 
-- [분류 기초와 성능평가](./01_classification_basics.ipynb)
+## 학습 파일 바로가기
+
+- [01_classification_basics](./01_classification_basics.ipynb)

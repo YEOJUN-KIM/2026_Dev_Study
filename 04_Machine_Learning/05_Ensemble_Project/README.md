@@ -1,6 +1,8 @@
-# 05 Ensemble Project
+# 05_Ensemble_Project
 
-[← Machine Learning](../README.md)
+[← Machine Learning README](../README.md)
 
-1. [앙상블 분류 모델](./01_ensemble_classification.ipynb)
-2. [와인 분류 종합 프로젝트](./02_wine_classification_project.ipynb)
+## 학습 파일 바로가기
+
+- [01_ensemble_classification](./01_ensemble_classification.ipynb)
+- [02_wine_classification_project](./02_wine_classification_project.ipynb)

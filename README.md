@@ -16,21 +16,21 @@
 
 | 순서 | 영역 | 주요 내용 | 바로가기 |
 | ---: | --- | --- | --- |
-| 01 | Python | 문법, 자료구조, 문제 풀이, 알고리즘 | [01_Python](./01_Python/) |
-| 02 | Database & API | SQL, PostgreSQL, FastAPI | [02_Database_and_API](./02_Database_and_API/) |
-| 03 | Data Pipeline | NumPy/Pandas, 전처리, 시각화, 수집, 자동화 | [03_Data_Pipeline](./03_Data_Pipeline/) |
-| 04 | Machine Learning | 전처리·특성공학, 회귀, 분류, 앙상블, 튜닝 | [04_Machine_Learning](./04_Machine_Learning/) |
-| 05 | React | React, Router, Redux, Axios | [05_React](./05_React/) |
+| 01 | Python | 문법, 자료구조, 문제 풀이, 알고리즘 | [01_Python README](./01_Python/README.md) |
+| 02 | Database & API | SQL, PostgreSQL, FastAPI | [02_Database_and_API README](./02_Database_and_API/README.md) |
+| 03 | Data Pipeline | NumPy/Pandas, 전처리, 시각화, 수집, 자동화 | [03_Data_Pipeline README](./03_Data_Pipeline/README.md) |
+| 04 | Machine Learning | 전처리·특성공학, 회귀, 분류, 앙상블, 튜닝 | [04_Machine_Learning README](./04_Machine_Learning/README.md) |
+| 05 | React | React, Router, Redux, Axios | [05_React README](./05_React/README.md) |
 
 ## 🤖 Machine Learning 빠른 이동
 
 | 순서 | 주제 | 핵심 내용 | 이동 |
 | ---: | --- | --- | --- |
-| 01 | Data Preparation | 결측치·이상치·EDA·특성공학 | [바로가기](./04_Machine_Learning/01_Data_Preparation/) |
-| 02 | Regression | KNN, 선형·다중·다항 회귀 | [바로가기](./04_Machine_Learning/02_Regression/) |
-| 03 | Regression Project | 주택가격 예측, 모델 비교, GridSearchCV, 저장·예측 | [바로가기](./04_Machine_Learning/03_Regression_Project/) |
-| 04 | Classification | 로지스틱/의사결정트리 기반 분류 학습 | [바로가기](./04_Machine_Learning/04_Classification/) |
-| 05 | Ensemble Project | 랜덤포레스트·부스팅·성능평가·와인 분류 실습 | [바로가기](./04_Machine_Learning/05_Ensemble_Project/) |
+| 01 | Data Preparation | 결측치·이상치·EDA·특성공학 | [바로가기](./04_Machine_Learning/01_Data_Preparation/README.md) |
+| 02 | Regression | KNN, 선형·다중·다항 회귀 | [바로가기](./04_Machine_Learning/02_Regression/README.md) |
+| 03 | Regression Project | 주택가격 예측, 모델 비교, GridSearchCV, 저장·예측 | [바로가기](./04_Machine_Learning/03_Regression_Project/README.md) |
+| 04 | Classification | 로지스틱/의사결정트리 기반 분류 학습 | [바로가기](./04_Machine_Learning/04_Classification/README.md) |
+| 05 | Ensemble Project | 랜덤포레스트·부스팅·성능평가 | [바로가기](./04_Machine_Learning/05_Ensemble_Project/README.md) |
 
 ## 📚 Learning Flow
 

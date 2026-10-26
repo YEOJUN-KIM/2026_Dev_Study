@@ -1,5 +1,7 @@
-# 03 Regression Project
+# 03_Regression_Project
 
-[← Machine Learning](../README.md)
+[← Machine Learning README](../README.md)
 
-- [주택가격 예측 · 전체 모델 비교 · GridSearchCV](./01_housing_price_modeling_and_tuning.ipynb)
+## 학습 파일 바로가기
+
+- [01_housing_price_modeling_and_tuning](./01_housing_price_modeling_and_tuning.ipynb)
