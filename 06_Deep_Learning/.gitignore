@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+data/figures/
+data/models/
+data/augmented/
+data/images/*
+!data/images/.gitkeep
+requirements-lock.txt

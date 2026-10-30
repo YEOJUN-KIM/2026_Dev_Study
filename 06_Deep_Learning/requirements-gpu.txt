@@ -1,0 +1,3 @@
+# NVIDIA GPU가 있는 Linux/WSL2용. Windows 네이티브용이 아닙니다.
+-r requirements.txt
+tensorflow[and-cuda]==2.20.0
